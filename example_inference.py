@@ -17,7 +17,7 @@ def example_inference():
    # net.to(device)
    # net.eval()    
     
-    net = EngineOV("./onnx/rmbg.bmodel",device_id=0)
+    net = EngineOV("./models/rmbg.bmodel",device_id=0)
     
     # prepare input
     model_input_size = [1024,1024]

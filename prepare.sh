@@ -10,6 +10,12 @@ pip3 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 echo "Downloading model files..."
 python3 -m dfss --url=open@sophgo.com:/aigc/models.zip
 
+while [ ! -f models.zip ]
+do
+  echo "Waiting for the model files to be downloaded..."
+  sleep 5 # 暂停5秒检查文件是否存在
+done
+
 # 检查并安装unzip工具
 if ! command -v unzip &> /dev/null
 then

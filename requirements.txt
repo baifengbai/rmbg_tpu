@@ -8,3 +8,4 @@ scikit-image
 huggingface_hub
 transformers>=4.39.1
 tpu_perf-1.2.35-py3-none-manylinux2014_aarch64.whl
+gradio

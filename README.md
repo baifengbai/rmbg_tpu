@@ -12,7 +12,14 @@ bash prepare.sh
 python3 gr.py
 ```
 
-通过浏览器打开即可运行gradio demo 。
+通过浏览器打开即可运行gradio demo 
+
+```
+# 拉起api服务
+python3 api.py
+# 测试
+python3 test_api.py
+```
 
 # BRIA Background Removal v1.4 Model Card
 
